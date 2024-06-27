@@ -6,7 +6,7 @@ from repository.user_repository import UserRepository
 
 class UserService():
     email_regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
-    passwd_regex = '^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*[!#$%&? "*@]).*$'
+    passwd_regex = '^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*[!#$%&? "*@-]).*$'
 
     repository = UserRepository()
 
